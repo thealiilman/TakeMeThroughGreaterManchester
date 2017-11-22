@@ -69,3 +69,110 @@ a {
   width: 100%;
   background-color: whitesmoke;
 }
+
+#content-section {
+  display: flex;
+  height: auto;
+  width: inherit;
+}
+
+.content-section > h3 {
+  margin: 8px 0;
+  align-self: flex-start;
+  font-weight: 700;
+}
+
+.content-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+}
+
+.content-card a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100%;
+  background-position: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  transition: background-size .25s;
+}
+
+#sports-one {
+  background-image: url("../images/old-trafford.jpg");
+}
+
+#sports-two {
+  background-image: url("https://mediacdn.mancity.com/-/media/images/home/news/club-news/2015/august/stadium-new.ashx");
+}
+
+.content-card a h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  position: absolute;
+  opacity: 0;
+  transition: opacity .25s;
+}
+
+.content-card:hover a::before {
+  content: "";
+  height: inherit;
+  width: inherit;
+  background-color: rgba(51, 51, 51, 0.75);
+}
+
+.content-card:hover a {
+  background-size: 150% 150%;
+}
+
+.content-card:last-child {
+  margin: 0;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 767px) {
+  #parallax {
+    background-size: cover;
+  }
+
+  #landing-container h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+    line-height: 48px;
+  }
+
+  #landing-container span {
+    font-size: 48px;
+    letter-spacing: 0px;
+  }
+
+  .content-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*padding: 16px;*/
+  }
+
+  .content-card {
+    height: 280px;
+    width: 100%;
+    padding: 16px;
+    /*margin: 0 0 16px 0;*/
+  }
+
+  .content-card a > h4 {
+    opacity: 1;
+  }
+
+  .content-card a::before {
+    content: "";
+    height: inherit;
+    width: inherit;
+    background-color: rgba(51, 51, 51, 0.75);
+  }
+}
