@@ -1,0 +1,71 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  color: #333;
+}
+
+p {
+  font-family: "Raleway", "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3 {
+  font-family: "Raleway", "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Rest of the Styling */
+
+#parallax {
+  position: fixed;
+  z-index: -1;
+  height: 60vh;
+  width: 100%;
+  background-image: url("../images/manc1.jpg");
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#landing-container {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(51, 51, 51, 0.5);
+  color: white;
+  text-align: center;
+}
+
+#landing-container h1 {
+  font-family: "Spectral SC", "Raleway", sans-serif;
+  font-weight: 700;
+  text-shadow: 0px 3px 1px rgba(38, 38, 38, 0.5);
+}
+
+#landing-container span {
+  font-family: "Lobster", "Raleway", sans-serif;
+  color: #e74c3c;
+}
+
+#content-container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  background-color: whitesmoke;
+}
