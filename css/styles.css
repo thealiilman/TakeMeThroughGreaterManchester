@@ -84,8 +84,6 @@ a {
 
 .content-card {
   display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: grey;
 }
 
@@ -175,14 +173,13 @@ a {
   }
 
   .content-section {
-    flex-flow: row wrap;
-    justify-content: space-around;
+    flex-direction: row;
     padding: 24px;
   }
 
   .content-card {
-    height: 200px;
-    flex: 1 1 4%;
+    height: 320px;
+    width: 45%;
   }
 }
 
