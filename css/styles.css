@@ -80,6 +80,8 @@ a {
   font-weight: 700;
 }
 
+/* Content Cards hold the content for each section e.g. Football and Music */
+
 .content-card {
   display: flex;
   justify-content: center;
@@ -93,11 +95,20 @@ a {
   align-items: center;
   height: 100%;
   width: 100%;
-  background-size: 100% 100%;
-  background-position: center;
   text-align: center;
   color: white;
-  overflow: hidden;
+  background-color: rgba(51, 51, 51, .5);
+  position: relative;
+  transition: background-size .25s;
+}
+
+.content-card a > div {
+  position: absolute;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100%;
+  background-position: center;
   transition: background-size .25s;
 }
 
@@ -112,18 +123,11 @@ a {
 .content-card a h4 {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
-  position: absolute;
+  z-index: 1;
   transition: opacity .25s;
 }
 
-.content-card:hover a::before {
-  content: "";
-  height: inherit;
-  width: inherit;
-  background-color: rgba(51, 51, 51, 0.75);
-}
-
-.content-card:hover a {
+.content-card:hover a > div {
   background-size: 150% 150%;
 }
 
@@ -171,14 +175,14 @@ a {
   }
 
   .content-section {
-    flex-direction: row wrap;
+    flex-flow: row wrap;
     justify-content: space-around;
     padding: 24px;
   }
 
   .content-card {
     height: 200px;
-    width: 200px;
+    flex: 1 1 4%;
   }
 }
 
@@ -197,5 +201,7 @@ a {
     height: inherit;
     width: inherit;
     background-color: rgba(51, 51, 51, 0.75);
+    z-index: 1;
+    position: absolute;
   }
 }
