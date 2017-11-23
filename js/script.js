@@ -1,5 +1,5 @@
 const parallax = document.getElementById("parallax"),
-      images = ["../images/manc1.jpg", "../images/manc2.jpg", "../images/manc3.jpg"];
+      images = ["./images/manc1.jpg", "./images/manc2.jpg", "./images/manc3.jpg"];
 let slide = 1;
 parallax.style.backgroundImage = "url("+images[slide-1]+")";
 
