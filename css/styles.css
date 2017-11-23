@@ -29,8 +29,8 @@ a {
   z-index: -1;
   height: 60vh;
   width: 100%;
-  background-position: center;
-  transition: all 1s ease-in-out;
+  background-position: center !important;
+  transition: background-image .5s ease-in-out;
 }
 
 #container {
