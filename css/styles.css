@@ -146,21 +146,45 @@ a {
   justify-content: center;
   align-items: center;
   position: relative;
-  background-color: rgba(51, 51, 51, 0.6);
+  background-color: #333;
+}
+
+.content-section-items > a > div {
+  position: absolute;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100%;
+  background-position: top;
+  transition: background-size .25s;
 }
 
 .content-section-items > a > h3 {
   color: white;
   align-self: center;
   text-align: center;
+  z-index: 1;
+  opacity: 0;
 }
 
+/* .content-section-items a's backgrounds */
+
 #music-one {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: -1;
   background-image: url("http://img.wennermedia.com/social/rs-211466-GettyImages-85216701.jpg");
+}
+
+#music-two {
+  background-image: url("http://ksassets.timeincuk.net/wp/uploads/sites/55/2017/08/GettyImages-839930156_liam_gallagher_1000-920x603.jpg");
+}
+
+#music-three {
+  background-image: url("http://ksassets.timeincuk.net/wp/uploads/sites/55/2016/12/2016_CallingFestival_NoelGallagher_GettyImages.jpg");
+}
+
+/* .content-section-items's effects */
+
+.content-section-items > a:hover div {
+  background-size: 150% 150%;
 }
 
 /* Media Queries */
@@ -195,7 +219,17 @@ a {
   }
 
   .content-section-items > a > h3 {
-    
+    font-size: 24px;
+    opacity: 1;
+  }
+
+  .content-section-items > a::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.64);
+    z-index: 1;
+    position: absolute;
   }
 }
 
@@ -213,10 +247,6 @@ a {
     flex-direction: row;
     padding: 24px;
   }
-
-  .content-card {
-    height: 320px;
-  }
 }
 
 @media only screen and (max-width: 1280px) {
@@ -230,12 +260,12 @@ a {
     opacity: 1;
   }
 
-  .content-card a::before {
+  /*.content-section-items > a::before {
     content: "";
     height: inherit;
     width: inherit;
     background-color: rgba(51, 51, 51, 0.75);
     z-index: 1;
     position: absolute;
-  }
+  }*/
 }
