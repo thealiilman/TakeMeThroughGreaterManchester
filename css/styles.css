@@ -72,6 +72,9 @@ a {
 
 #content-section {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: auto;
   width: 100%;
   background-color: white;
@@ -85,55 +88,6 @@ a {
 
 /* .content-section-items hold the content for each section e.g. Music */
 
-/*.content-card {
-  display: flex;
-}
-
-.content-card a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  color: white;
-  background-color: rgba(51, 51, 51, .5);
-  position: relative;
-}
-
-.content-card a > div {
-  position: absolute;
-  z-index: 0;
-  height: 100%;
-  width: 100%;
-  background-size: 100% 100%;
-  background-position: center;
-  transition: background-size .25s;
-}
-
-#sports-one {
-  background-image: url("../images/old-trafford.jpg");
-}
-
-#sports-two {
-  background-image: url("https://mediacdn.mancity.com/-/media/images/home/news/club-news/2015/august/stadium-new.ashx");
-}
-
-.content-card a h4 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  z-index: 1;
-  transition: opacity .25s;
-}
-
-.content-card:hover a > div {
-  background-size: 150% 150%;
-}
-
-.content-card:last-child {
-  margin: 0;
-}*/
-
 .content-section-items {
   display: flex;
   height: auto;
@@ -146,7 +100,6 @@ a {
   justify-content: center;
   align-items: center;
   position: relative;
-  background-color: #333;
 }
 
 .content-section-items > a > div {
@@ -170,15 +123,31 @@ a {
 /* .content-section-items a's backgrounds */
 
 #music-one {
-  background-image: url("http://img.wennermedia.com/social/rs-211466-GettyImages-85216701.jpg");
+  background-image: url("http://media.gettyimages.com/photos/photo-of-liam-gallagher-and-noel-gallagher-and-oasis-lrtony-mccarroll-picture-id85216701");
 }
 
 #music-two {
-  background-image: url("http://ksassets.timeincuk.net/wp/uploads/sites/55/2017/08/GettyImages-839930156_liam_gallagher_1000-920x603.jpg");
+  background-image: url("http://media.gettyimages.com/photos/liam-gallagher-performs-at-reading-festival-at-richfield-avenue-on-picture-id839990676");
 }
 
 #music-three {
-  background-image: url("http://ksassets.timeincuk.net/wp/uploads/sites/55/2016/12/2016_CallingFestival_NoelGallagher_GettyImages.jpg");
+  background-image: url("http://media.gettyimages.com/photos/noel-gallagher-of-noel-gallaghers-high-flying-birds-performs-on-the-picture-id146992885");
+}
+
+#music-four {
+  background-image: url("https://lastfm-img2.akamaized.net/i/u/770x0/d4ead78e067140ed8232cbf67a143618.jpg");
+}
+
+#music-five {
+  background-image: url("http://media.gettyimages.com/photos/the-verve-richard-ashcroft-nick-mccabe-peter-salisbury-simon-jones-picture-id835393120");
+}
+
+#music-six {
+  background-image: url("http://media.gettyimages.com/photos/the-courteeners-perform-in-concert-during-day-1-of-festival-de-on-picture-id814089268");
+}
+
+#music-seven {
+  background-image: url("http://media.gettyimages.com/photos/photo-of-the-smiths-and-morrissey-and-mike-joyce-and-johnny-marr-and-picture-id85363343");
 }
 
 /* .content-section-items's effects */
@@ -199,9 +168,6 @@ a {
   }
 
   .content-section {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding: 16px;
   }
 
@@ -214,22 +180,12 @@ a {
     margin-bottom: 16px;
   }
 
-  .content-section-items > a:last-child {
-    margin: 0;
-  }
-
   .content-section-items > a > h3 {
     font-size: 24px;
-    opacity: 1;
   }
 
-  .content-section-items > a::before {
-    content: "";
-    height: 100%;
-    width: 100%;
-    background-color: rgba(51, 51, 51, 0.64);
-    z-index: 1;
-    position: absolute;
+  .content-section-items > a:last-child {
+    margin: 0;
   }
 }
 
@@ -244,8 +200,75 @@ a {
   }
 
   .content-section {
-    flex-direction: row;
     padding: 24px;
+  }
+
+  .content-section-items {
+    flex-flow: row wrap;
+  }
+
+  .content-section-items > a {
+    display: flex;
+    height: 320px;
+    width: 320px;
+    justify-content: center;
+    background-color: #333;
+    flex-grow: 1;
+  }
+
+  .content-section-items > a > h3 {
+    font-size: 24px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1019px) {
+  .content-section-items > a > h3 {
+    font-size: 24px !important;
+  }
+
+  #music > a {
+    margin: 0 24px 24px 0;
+  }
+
+  #music > a:nth-child(even) {
+    margin-right: 0;
+  }
+
+  #music > a:last-child {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1020px) and (max-width: 1108px) {
+  .content-section-items > a {
+    height: 340px;
+    width: 340px;
+  }
+
+  #music > a {
+    margin: 0 24px 24px 0;
+  }
+
+  #music > a:nth-child(even) {
+    margin-right: 0;
+  }
+
+  #music > a:last-child {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1109px) and (max-width: 1280px) {
+  #music > a {
+    margin: 0 24px 24px 0;
+  }
+
+  #music > a:nth-child(3), #music > a:nth-child(6) {
+    margin-right: 0;
+  }
+
+  #music > a:last-child {
+    margin: 0;
   }
 }
 
@@ -255,17 +278,17 @@ a {
     background-image: url("../images/manc1.jpg") !important;
   }
 
-  .content-card a > h4 {
-    font-size: 24px;
+  .content-section-items > a > h3 {
+    font-size: 32px;
     opacity: 1;
   }
 
-  /*.content-section-items > a::before {
+  .content-section-items > a::before {
     content: "";
-    height: inherit;
-    width: inherit;
-    background-color: rgba(51, 51, 51, 0.75);
+    height: 100%;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.64);
     z-index: 1;
     position: absolute;
-  }*/
+  }
 }
