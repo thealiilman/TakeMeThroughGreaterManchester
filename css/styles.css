@@ -91,7 +91,7 @@ a {
 .content-section-items {
   display: flex;
   height: auto;
-  width: 100%;
+  flex: 1;
   background-color: white;
 }
 
@@ -108,7 +108,7 @@ a {
   height: 100%;
   width: 100%;
   background-size: 100% 100%;
-  background-position: top;
+  background-position: center;
   transition: background-size .25s;
 }
 
@@ -121,6 +121,18 @@ a {
 }
 
 /* .content-section-items a's backgrounds */
+
+#football-one {
+  background-image: url("../images/old-trafford.jpg");
+}
+
+#football-two {
+  background-image: url("https://mediacdn.mancity.com/-/media/images/home/news/club-news/2015/august/stadium-new.ashx");
+}
+
+#music > a > div {
+  background-position: top;
+}
 
 #music-one {
   background-image: url("http://media.gettyimages.com/photos/photo-of-liam-gallagher-and-noel-gallagher-and-oasis-lrtony-mccarroll-picture-id85216701");
@@ -196,7 +208,7 @@ a {
   }
 
   #landing-container span {
-    font-size: 56px;
+    font-size: 60px;
   }
 
   .content-section {
@@ -216,6 +228,10 @@ a {
     flex-grow: 1;
     margin: 0 24px 24px 0;
   }
+
+  #football > a:last-child {
+    margin: 0;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1019px) {
@@ -229,7 +245,7 @@ a {
 }
 
 @media only screen and (min-width: 1020px) and (max-width: 1108px) {
-  #music > a {
+  .content-section-items > a {
     height: 340px;
     width: 340px;
   }
@@ -271,5 +287,64 @@ a {
     background-color: rgba(51, 51, 51, 0.64);
     z-index: 1;
     position: absolute;
+  }
+}
+
+@media only screen and (min-width: 1281px) and (max-width: 1440px) {
+  #parallax {
+    background-size: 100% 100%;
+  }
+}
+
+@media only screen and (min-width: 1281px) {
+  #parallax {
+    background-size: cover;
+  }
+
+  #landing-container h1 {
+    font-size: 56px;
+    line-height: 72px;
+  }
+
+  #landing-container span {
+    font-size: 64px;
+  }
+
+  .content-section {
+    padding: 48px;
+  }
+
+  .content-section-items {
+    flex-flow: row wrap;
+  }
+
+  .content-section-items > a {
+    height: 600px;
+    flex: 1;
+  }
+
+  .content-section-items > a:first-child {
+    margin-right: 24px;
+  }
+
+  .content-section-items > a:last-child {
+    margin-left: 24px;
+  }
+
+  .content-section-items > a > h3 {
+    font-size: 32px;
+  }
+
+  .content-section-items > a:hover a::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.64);
+    z-index: 1;
+    position: absolute;
+  }
+
+  .content-section-items > a:hover > h3 {
+    opacity: 1;
   }
 }
