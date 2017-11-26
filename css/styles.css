@@ -232,10 +232,8 @@ a {
   .content-section-items > a {
     display: flex;
     height: 320px;
-    width: 320px;
     justify-content: center;
     background-color: #333;
-    flex-grow: 1;
     margin: 0 24px 24px 0;
   }
 
@@ -244,37 +242,22 @@ a {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1019px) {
-  #music > a:nth-child(even) {
-    margin-right: 0;
-  }
-
-  #music > a:last-child {
-    margin: 0;
-  }
-}
-
-@media only screen and (min-width: 1020px) and (max-width: 1108px) {
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
   .content-section-items > a {
-    height: 340px;
-    width: 340px;
+    flex: 1 1 45%;
   }
 
-  #music > a:nth-child(even) {
-    margin-right: 0;
-  }
-
-  #music > a:last-child {
+  .content-section-items > a:nth-child(even) {
     margin: 0;
   }
 }
 
-@media only screen and (min-width: 1109px) and (max-width: 1280px) {
-  #music > a:nth-child(3), #music > a:nth-child(6) {
-    margin-right: 0;
+@media only screen and (min-width: 1081px) and (max-width: 1280px) {
+  .content-section-items > a {
+    flex: 1 1 30%;
   }
 
-  #music > a:last-child {
+  .content-section-items > a:nth-child(3), a:nth-child(6) {
     margin: 0;
   }
 }
@@ -285,67 +268,12 @@ a {
     background-image: url("../images/manc1.jpg") !important;
   }
 
+  .content-section-items > a:last-child {
+    margin: 0;
+  }
+
   .content-section-items > a > h3 {
     font-size: 28px;
-    opacity: 1;
-  }
-}
-
-@media only screen and (min-width: 1281px) and (max-width: 1440px) {
-  #parallax {
-    background-size: 100% 100%;
-  }
-}
-
-@media only screen and (min-width: 1281px) {
-  #parallax {
-    background-size: cover;
-  }
-
-  #landing-container h1 {
-    font-size: 56px;
-    line-height: 72px;
-  }
-
-  #landing-container span {
-    font-size: 64px;
-  }
-
-  .content-section {
-    padding: 48px;
-  }
-
-  .content-section-items {
-    flex-flow: row wrap;
-  }
-
-  .content-section-items > a {
-    height: 600px;
-    flex: 1;
-  }
-
-  .content-section-items > a:first-child {
-    margin-right: 24px;
-  }
-
-  .content-section-items > a:last-child {
-    margin-left: 24px;
-  }
-
-  .content-section-items > a > h3 {
-    font-size: 32px;
-  }
-
-  .content-section-items > a:hover a::before {
-    content: "";
-    height: 100%;
-    width: 100%;
-    background-color: rgba(51, 51, 51, 0.64);
-    z-index: 1;
-    position: absolute;
-  }
-
-  .content-section-items > a:hover > h3 {
     opacity: 1;
   }
 }
