@@ -121,6 +121,11 @@ a {
   transition: opacity .25s;
 }
 
+#football > a:first-child {
+  flex: 1 1 100%;
+  margin-right: 0;
+}
+
 /* .content-section-items a's backgrounds */
 
 #football-one {
@@ -128,7 +133,11 @@ a {
 }
 
 #football-two {
-  background-image: url("https://mediacdn.mancity.com/-/media/images/home/news/club-news/2015/august/stadium-new.ashx");
+  background-image: url("https://i2-prod.manchestereveningnews.co.uk/incoming/article13786091.ece/ALTERNATES/s615b/JS134046462.jpg");
+}
+
+#football-three {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Etihad_Stadium.jpg/1200px-Etihad_Stadium.jpg");
 }
 
 #music > a > div {
@@ -136,31 +145,31 @@ a {
 }
 
 #music-one {
-  background-image: url("http://media.gettyimages.com/photos/photo-of-liam-gallagher-and-noel-gallagher-and-oasis-lrtony-mccarroll-picture-id85216701");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/73/Oasis_Liam_and_Noel.jpg");
 }
 
 #music-two {
-  background-image: url("http://media.gettyimages.com/photos/liam-gallagher-performs-at-reading-festival-at-richfield-avenue-on-picture-id839990676");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/2017_RiP_-_Liam_Gallagher_-_by_2eight_-_8SC1566.jpg/800px-2017_RiP_-_Liam_Gallagher_-_by_2eight_-_8SC1566.jpg");
 }
 
 #music-three {
-  background-image: url("http://media.gettyimages.com/photos/noel-gallagher-of-noel-gallaghers-high-flying-birds-performs-on-the-picture-id146992885");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e0/Noel_Gallagher_at_Razzmatazz%2C_Barcelona%2C_Spain-5March2012_%283%29.jpg");
 }
 
 #music-four {
-  background-image: url("https://lastfm-img2.akamaized.net/i/u/770x0/d4ead78e067140ed8232cbf67a143618.jpg");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Stone_Roses-17-07-2012_Milan.JPG/1280px-Stone_Roses-17-07-2012_Milan.JPG");
 }
 
 #music-five {
-  background-image: url("http://media.gettyimages.com/photos/the-verve-richard-ashcroft-nick-mccabe-peter-salisbury-simon-jones-picture-id835393120");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/ab/Verve_MSG.jpg");
 }
 
 #music-six {
-  background-image: url("http://media.gettyimages.com/photos/the-courteeners-perform-in-concert-during-day-1-of-festival-de-on-picture-id814089268");
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/1/19/The_Courteeners.jpg");
 }
 
 #music-seven {
-  background-image: url("http://media.gettyimages.com/photos/photo-of-the-smiths-and-morrissey-and-mike-joyce-and-johnny-marr-and-picture-id85363343");
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/f/ff/SmithsPromoPhoto_TQID_1985.jpg");
 }
 
 /* .content-section-items's effects */
@@ -250,6 +259,10 @@ a {
   .content-section-items > a:nth-child(even) {
     margin: 0;
   }
+
+  #football > a:nth-child(even) {
+    margin-right: 24px;
+  }
 }
 
 @media only screen and (min-width: 1081px) and (max-width: 1280px) {
@@ -303,6 +316,10 @@ a {
   .content-section-items > a {
     height: 480px;
     margin: 0 48px 48px 0;
+  }
+
+  #football > a:nth-child(even) {
+    margin-right: 48px;
   }
 
   .content-section-items > a > h3 {
