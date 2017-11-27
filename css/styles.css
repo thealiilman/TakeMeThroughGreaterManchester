@@ -140,6 +140,22 @@ a {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Etihad_Stadium.jpg/1200px-Etihad_Stadium.jpg");
 }
 
+#archandland-one {
+  background-image: url("../images/salford-quays.jpg");
+}
+
+#archandland-two {
+  background-image: url("../images/dovestone.jpg");
+}
+
+#archandland-three {
+  background-image: url("../images/albert-square.jpg");
+}
+
+#archandland-four {
+  background-image: url("../images/manchester-cityscape.jpg");
+}
+
 #music > a > div {
   background-position: top;
 }
@@ -170,6 +186,14 @@ a {
 
 #music-seven {
   background-image: url("https://upload.wikimedia.org/wikipedia/en/f/ff/SmithsPromoPhoto_TQID_1985.jpg");
+}
+
+#coffee-one {
+  background-image: url("../images/pot-kettle-black.jpg");
+}
+
+#coffee-two {
+  background-image: url("https://media-cdn.tripadvisor.com/media/photo-s/0f/f4/82/1d/takk-coffee-house.jpg");
 }
 
 /* .content-section-items's effects */
@@ -270,6 +294,18 @@ a {
     flex: 1 1 30%;
   }
 
+  #archandland > a {
+    flex: 1 1 45%;
+  }
+
+  #archandland > a:nth-child(2) {
+    margin: 0;
+  }
+
+  #archandland > a:nth-child(3) {
+    margin-right: 24px;
+  }
+
   .content-section-items > a:nth-child(3), a:nth-child(6) {
     margin: 0;
   }
@@ -348,6 +384,18 @@ a {
 @media only screen and (min-width: 1441px) {
   .content-section-items > a {
     flex: 1 1 30%;
+  }
+
+  #archandland > a {
+    flex: 1 1 45%;
+  }
+
+  #archandland > a:nth-child(2) {
+    margin: 0;
+  }
+
+  #archandland > a:nth-child(3) {
+    margin-right: 48px;
   }
 
   .content-section-items > a:nth-child(3), a:nth-child(6), a:last-child {
