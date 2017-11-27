@@ -283,10 +283,6 @@ a {
   .content-section-items > a:nth-child(even) {
     margin: 0;
   }
-
-  #football > a:nth-child(even) {
-    margin-right: 24px;
-  }
 }
 
 @media only screen and (min-width: 1081px) and (max-width: 1280px) {
@@ -300,10 +296,6 @@ a {
 
   #archandland > a:nth-child(2) {
     margin: 0;
-  }
-
-  #archandland > a:nth-child(3) {
-    margin-right: 24px;
   }
 
   .content-section-items > a:nth-child(3), a:nth-child(6) {
@@ -353,11 +345,7 @@ a {
     height: 480px;
     margin: 0 48px 48px 0;
   }
-
-  #football > a:nth-child(even) {
-    margin-right: 48px;
-  }
-
+  
   .content-section-items > a > h3 {
     font-size: 32px;
   }
@@ -392,10 +380,6 @@ a {
 
   #archandland > a:nth-child(2) {
     margin: 0;
-  }
-
-  #archandland > a:nth-child(3) {
-    margin-right: 48px;
   }
 
   .content-section-items > a:nth-child(3), a:nth-child(6), a:last-child {
