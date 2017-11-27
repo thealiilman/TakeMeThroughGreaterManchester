@@ -211,6 +211,26 @@ a {
   position: absolute;
 }
 
+footer {
+	display: flex;
+	justify-content: center;
+	background-color: rgba(51, 51, 51, 1);
+	font-family: "Raleway";
+	font-weight: 600;
+  color: white;
+  padding: 8px;
+}
+
+footer a {
+	text-decoration: none;
+	color: inherit;
+	transition: color 0.5s;
+}
+
+footer a:hover {
+	color: #e74c3c;
+}
+
 /* Media Queries */
 @media only screen and (max-width: 767px) {
   #landing-container h1 {
