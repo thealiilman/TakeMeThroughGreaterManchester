@@ -121,10 +121,10 @@ a {
   transition: opacity .25s;
 }
 
-#football > a:first-child {
+/*#football > a:first-child {
   flex: 1 1 100%;
   margin-right: 0;
-}
+}*/
 
 /* .content-section-items a's backgrounds */
 
@@ -213,12 +213,13 @@ a {
 
 footer {
 	display: flex;
-	justify-content: center;
+  justify-content: center;
+  align-items: center;
 	background-color: rgba(51, 51, 51, 1);
 	font-family: "Raleway";
 	font-weight: 600;
   color: white;
-  padding: 8px;
+  height: 48px;
 }
 
 footer a {
@@ -364,6 +365,11 @@ footer a:hover {
   .content-section-items > a {
     height: 480px;
     margin: 0 48px 48px 0;
+  }
+
+  #football > a {
+    flex: 1 1 100%;
+    margin-right: 0;
   }
   
   .content-section-items > a > h3 {
